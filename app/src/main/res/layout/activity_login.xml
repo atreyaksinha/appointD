@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/niyukt" />
+
+        <EditText
+            android:layout_width="254dp"
+            android:layout_height="47dp"
+            android:background="@drawable/btn"
+            android:layout_marginTop="90dp"
+            android:gravity="center"
+            android:elevation="2.5dp"
+            android:hint="Email ID"
+            android:inputType="textEmailAddress"
+            android:id="@+id/email_ID"/>
+
+        <EditText
+            android:layout_width="254dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="35dp"
+            android:elevation="2.5dp"
+            android:gravity="center"
+            android:hint="Password"
+            android:background="@drawable/btn"
+            android:inputType="textPassword"
+            android:id="@+id/password_Log"/>
+
+        <Button
+            android:id="@+id/sign_In"
+            android:layout_width="221dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="45dp"
+            android:text="Sign In"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/book_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:text="-OR-"/>
+
+        <Button
+            android:id="@+id/register_Btn"
+            android:layout_width="221dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="Register"
+            android:background="@drawable/btn"
+            android:textColor="#707070" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_circular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

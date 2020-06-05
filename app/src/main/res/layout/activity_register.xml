@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        app:lottie_rawRes="@raw/register"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true" />
+
+                <EditText
+                    android:layout_width="254dp"
+                    android:layout_height="47dp"
+                    android:background="@drawable/btn"
+                    android:gravity="center"
+                    android:layout_marginTop="45dp"
+                    android:inputType="textEmailAddress"
+                    android:hint="Email ID"
+                    android:elevation="1.5dp"
+                    android:id="@+id/email"/>
+
+                <EditText
+                    android:layout_width="254dp"
+                    android:layout_height="47dp"
+                    android:background="@drawable/btn"
+                    android:gravity="center"
+                    android:elevation="1.5dp"
+                    android:inputType="textPassword"
+                    android:layout_marginTop="35dp"
+                    android:hint="Password"
+                    android:id="@+id/password"/>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="160dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="55dp"
+        android:text="register"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/book_btn" />
+
+</LinearLayout>
